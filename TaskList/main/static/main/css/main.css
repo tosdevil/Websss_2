@@ -1,0 +1,87 @@
+body {
+background:#252525;
+color: white;
+}
+
+.navigation {
+    float: left;
+    background:#181818;
+    width: 20%;
+    padding: 2.5%;
+    height: 100vh;
+    color: #fff;
+    border-right: 5px sold #4d4d4d;
+}
+
+.navigation ul {list-style: none}
+
+.navigation ul li {
+    color: white;
+    display: block;
+    margin-top: 20px;
+}
+
+main .featuring {
+    float: left;
+    color: white;
+    margin-top: 100px;
+    text-align: center;
+    width: 75%;
+}
+
+.single_task {
+background: #404040;
+width: 30%;
+margin: 0 auto;
+border: 5px solid #606060;
+border-radius: 15px;
+transition: 0.5s;
+margin-top: 10px;
+}
+
+.task_author
+{
+    text-align: left;
+    margin-left: 10px;
+    color: #fff;
+}
+
+.single_task:hover
+{
+    border: 5px solid #808080;
+}
+
+.editanddeleteicons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.iconss_edit {
+    color: #696D7D;
+    transition: 0.5s;
+}
+
+.iconss_edit:hover {
+    color: #D2E59E;
+}
+
+.iconss_delete {
+    color: #696D7D;
+    transition: 0.5s;
+}
+
+.iconss_delete:hover {
+    color: red;
+}
+
+.button_add {
+    size: 20px;
+}
+
+form {
+    margin: 0 auto;
+    width: 300px;
+    margin-top: 50px;
+}

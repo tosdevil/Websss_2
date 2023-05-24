@@ -1,0 +1,26 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}база!{% endblock %}
+
+{% block content %}
+    <div class = "featuring">
+        <h1>Список дел</h1>
+        <p>Здесь вы можете составить список дел, а также отредактировать его.</p>
+        <a href="{% url 'create' %}"><i class="bi bi-plus-circle-fill button_add"></i></a>
+        {% if tasks %}
+        {% for el in tasks %}
+            <div class = 'single_task'>
+                <p>{{ el.TaskText }}</p>
+                <p>{{ el.author }}</p>
+                <div class = 'editanddeleteicons'>
+                    <a href="{{ el.id }}/update"><i class="bi bi-pencil-fill iconss_edit"></i></a>
+                    <a href="{{ el.id }}/delete"><i class="bi bi-trash3-fill iconss_delete"></i></a>
+                </div>
+            </div>
+        {% endfor %}
+        {% else %}
+            <p>У вас пока что нет задачек.</p>
+        {% endif %}
+
+    </div>
+{% endblock %}
