@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 class Task(models.Model):
     TaskText = models.CharField('Описание дела', max_length=250)
     # author = models.CharField('Автор', max_length=50)
-    author = models.ForeignKey(User, on_delete=models.CASCADE)
+    author = models.ForeignKey(User, on_delete=models.CASCADE, null = True, blank = True)
     def __str__(self):
         return self.TaskText
 

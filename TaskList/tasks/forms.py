@@ -2,9 +2,10 @@ from .models import Task
 from django.forms import ModelForm, TextInput
 
 class TaskForm(ModelForm):
+
     class Meta:
         model = Task
-        fields = ['TaskText', 'author']
+        fields = ['TaskText']
 
         widgets = {
             "TaskText": TextInput(attrs={
@@ -12,3 +13,4 @@ class TaskForm(ModelForm):
                 'placeholder': 'Задача'
             })
         }
+

@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'main',
     'tasks',
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -127,3 +128,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATICFILES_DIR = [
     BASE_DIR / 'static',
 ]
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'

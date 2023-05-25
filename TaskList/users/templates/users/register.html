@@ -1,13 +1,14 @@
 {% extends 'main/layout.html' %}
 
-{% block title %}Добавление задачки{% endblock %}
+{% block title %}Регистрация{% endblock %}
 
 {% block content %}
     <div class = "featuring">
-        <h1>Добавление задачи</h1>
+        <h1>Регистрация</h1>
         <form method="post">
             {% csrf_token %}
             {{ form.TaskText }}<br>
+            {{ form.author }}<br>
             <span>{{ error }}</span>
             <button class="btn btn-success" type="submit">Добавить задачу</button>
         </form>
