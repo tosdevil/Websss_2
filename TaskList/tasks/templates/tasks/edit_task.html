@@ -1,0 +1,15 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Редактирование задачи{% endblock %}
+
+{% block content %}
+    <div class = "featuring">
+        <h1>Редактирование задачи</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.TaskText }}<br>
+            <span>{{ error }}</span>
+            <button class="btn btn-success" type="submit">Редактировать задачу</button>
+        </form>
+    </div>
+{% endblock %}

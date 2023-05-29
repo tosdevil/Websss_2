@@ -9,7 +9,7 @@
         {% if request.user.is_authenticated %}
         <p>Добро пожаловать, {{ request.user }}! Можете приступать к <a href="{% url 'tasks_home' %}">своим делам</a>.</p>
         {% else %}
-        <p>Для начала нужно зарегистрироваться или авторизоваться.</p>
+        <p>Для начала нужно <a href="{% url 'register' %}">зарегистрироваться</a> или <a href="{% url 'login' %}">авторизироваться</a>.</p>
         {% endif %}
 
 

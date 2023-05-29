@@ -11,7 +11,7 @@ class TaskDelete(DeleteView):
 
 class TaskUpdate(UpdateView):
     model = Task
-    template_name = 'tasks/create.html'
+    template_name = 'tasks/edit_task.html'
 
     form_class = TaskForm
 
