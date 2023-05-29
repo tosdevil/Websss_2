@@ -7,10 +7,14 @@
         <h1>Регистрация</h1>
         <form method="post">
             {% csrf_token %}
-            {{ form.TaskText }}<br>
-            {{ form.author }}<br>
-            <span>{{ error }}</span>
-            <button class="btn btn-success" type="submit">Добавить задачу</button>
+            <label>{{ form.username.label }}</label><br>
+            {{ form.username }}<br>
+            <label>{{ form.password1.label }}</label><br>
+            {{ form.password1 }}<br>
+            <label>{{ form.password2.label }}</label><br>
+            {{ form.password2 }}<br>
+            <p> </p>
+            <button class="btn btn-success" type="submit">Зарегистрироваться</button>
         </form>
     </div>
 {% endblock %}
